@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  mukube-vnet:
+  - apiVersion: v2
+    created: "2021-03-24T11:17:23.8331706+01:00"
+    digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
+    maintainers:
+    - name: Jacob Crawford
+    name: mukube-vnet
+    urls:
+    - mukube-vnet-v0.1.1.tgz
+    version: v0.1.1
+generated: "2021-03-24T11:17:23.8328507+01:00"
