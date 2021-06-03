@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   argo-chart:
   - apiVersion: v2
-    created: "2021-05-30T13:40:54.233142108Z"
+    created: "2021-06-03T09:48:20.481867919Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -18,9 +18,35 @@ entries:
     urls:
     - yggdrasil-v0.3.6.tgz
     version: v0.3.6
+  coredns:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial helm chart changelog
+    apiVersion: v2
+    appVersion: 1.8.0
+    created: "2021-06-03T09:48:20.470105739Z"
+    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes DNS Services
+    digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
+    home: https://coredns.io
+    icon: https://coredns.io/images/CoreDNS_Colour_Horizontal.png
+    keywords:
+    - coredns
+    - dns
+    - kubedns
+    maintainers:
+    - name: mrueg
+    - name: haad
+    - name: Andreas Skovbakke
+    name: coredns
+    sources:
+    - https://github.com/coredns/coredns
+    type: application
+    urls:
+    - coredns-1.15.2.tgz
+    version: 1.15.2
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-05-30T13:40:54.211936275Z"
+    created: "2021-06-03T09:48:20.471902453Z"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -29,7 +55,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-05-30T13:40:54.211230254Z"
+    created: "2021-06-03T09:48:20.471290655Z"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -38,7 +64,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-05-30T13:40:54.210490305Z"
+    created: "2021-06-03T09:48:20.470819878Z"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -46,4 +72,4 @@ entries:
     urls:
     - mukube-vnet-v0.1.1.tgz
     version: v0.1.1
-generated: "2021-05-30T13:40:54.209448139Z"
+generated: "2021-06-03T09:48:20.467207589Z"
