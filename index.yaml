@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   argo-chart:
   - apiVersion: v2
-    created: "2021-06-03T09:48:20.481867919Z"
+    created: "2021-07-05T14:05:34.715476688+02:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -18,13 +18,23 @@ entries:
     urls:
     - yggdrasil-v0.3.6.tgz
     version: v0.3.6
+  chart:
+  - apiVersion: v2
+    created: "2021-07-05T14:05:34.700351711+02:00"
+    description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
+    digest: 96bb334ca3def9a2fbf8282b101d13899c45c5932f648bf8c058954fa2238e9e
+    name: chart
+    type: application
+    urls:
+    - lightvessel-v0.1.0.tgz
+    version: 0.1.0
   coredns:
   - annotations:
       artifacthub.io/changes: |
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2021-06-03T09:48:20.470105739Z"
+    created: "2021-07-05T14:05:34.699860931+02:00"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes DNS Services
     digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
     home: https://coredns.io
@@ -46,7 +56,7 @@ entries:
     version: 1.15.2
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-06-03T09:48:20.471902453Z"
+    created: "2021-07-05T14:05:34.701778556+02:00"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -55,7 +65,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-06-03T09:48:20.471290655Z"
+    created: "2021-07-05T14:05:34.701174528+02:00"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -64,7 +74,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-06-03T09:48:20.470819878Z"
+    created: "2021-07-05T14:05:34.700710662+02:00"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -72,4 +82,4 @@ entries:
     urls:
     - mukube-vnet-v0.1.1.tgz
     version: v0.1.1
-generated: "2021-06-03T09:48:20.467207589Z"
+generated: "2021-07-05T14:05:34.697498513+02:00"
