@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   CNI:
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.004585398+02:00"
+    created: "2021-07-07T15:13:36.998330324+02:00"
     digest: 7d5089c3293316c8ff4aefb7e115acda789758a1d50eab4e03ecbe5331fc65fc
     name: CNI
     urls:
@@ -10,7 +10,7 @@ entries:
     version: v0.3.1
   argo-chart:
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.057403604+02:00"
+    created: "2021-07-07T15:13:37.077133152+02:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -32,7 +32,7 @@ entries:
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2021-07-07T15:07:31.007260476+02:00"
+    created: "2021-07-07T15:13:37.007977061+02:00"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes DNS Services
     digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
     home: https://coredns.io
@@ -54,7 +54,7 @@ entries:
     version: 1.15.2
   lightvessel:
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.008399081+02:00"
+    created: "2021-07-07T15:13:37.009367291+02:00"
     description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
     digest: a02b6032b8671e5d80dd3340c8246ca4cd0efa68dceb3714d44b1d8b0abf7c09
     name: lightvessel
@@ -63,7 +63,7 @@ entries:
     - lightvessel-v0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.007963457+02:00"
+    created: "2021-07-07T15:13:37.008744076+02:00"
     description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
     digest: 539e53e042686ba528181dd45c6dafe583085ecc712a43bd3b32585923337c69
     name: lightvessel
@@ -73,7 +73,7 @@ entries:
     version: 0.1.0
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.011686193+02:00"
+    created: "2021-07-07T15:13:37.015413318+02:00"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -82,7 +82,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.010048144+02:00"
+    created: "2021-07-07T15:13:37.014714597+02:00"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -91,7 +91,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.009454158+02:00"
+    created: "2021-07-07T15:13:37.010309564+02:00"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -101,7 +101,24 @@ entries:
     version: v0.1.1
   nidhogg:
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.047198426+02:00"
+    created: "2021-07-07T15:13:37.063100891+02:00"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 3.3.5
+    - condition: installCNI
+      name: CNI
+      repository: https://distributed-technologies.github.io/helm-repository/
+      version: v0.3.1
+    description: A chart that deploys argo-cd and the Yggdrasil chart.
+    digest: 541c9321d3158aeea8193f193ceac96399b81af6f31c41d0f9a33a868480c1ee
+    name: nidhogg
+    type: application
+    urls:
+    - nidhogg-v0.4.7.tgz
+    version: v0.4.7
+  - apiVersion: v2
+    created: "2021-07-07T15:13:37.049861225+02:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -118,7 +135,7 @@ entries:
     - nidhogg-v0.4.6.tgz
     version: v0.4.6
   - apiVersion: v2
-    created: "2021-07-07T15:07:31.030125342+02:00"
+    created: "2021-07-07T15:13:37.031200475+02:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -134,4 +151,4 @@ entries:
     urls:
     - nidhogg-v0.4.5.tgz
     version: v0.4.5
-generated: "2021-07-07T15:07:31.003948979+02:00"
+generated: "2021-07-07T15:13:36.997578802+02:00"
