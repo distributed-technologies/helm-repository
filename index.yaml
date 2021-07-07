@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   CNI:
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.692508021+02:00"
+    created: "2021-07-07T14:56:59.815815108+02:00"
     digest: 7d5089c3293316c8ff4aefb7e115acda789758a1d50eab4e03ecbe5331fc65fc
     name: CNI
     urls:
@@ -10,7 +10,7 @@ entries:
     version: v0.3.1
   argo-chart:
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.726170769+02:00"
+    created: "2021-07-07T14:56:59.873874422+02:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -32,7 +32,7 @@ entries:
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2021-07-06T13:33:18.694910984+02:00"
+    created: "2021-07-07T14:56:59.818844419+02:00"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes DNS Services
     digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
     home: https://coredns.io
@@ -54,7 +54,7 @@ entries:
     version: 1.15.2
   lightvessel:
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.695680364+02:00"
+    created: "2021-07-07T14:56:59.819739907+02:00"
     description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
     digest: a02b6032b8671e5d80dd3340c8246ca4cd0efa68dceb3714d44b1d8b0abf7c09
     name: lightvessel
@@ -63,7 +63,7 @@ entries:
     - lightvessel-v0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.695290402+02:00"
+    created: "2021-07-07T14:56:59.819303621+02:00"
     description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
     digest: 539e53e042686ba528181dd45c6dafe583085ecc712a43bd3b32585923337c69
     name: lightvessel
@@ -73,7 +73,7 @@ entries:
     version: 0.1.0
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.69707954+02:00"
+    created: "2021-07-07T14:56:59.821666354+02:00"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -82,7 +82,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.696564343+02:00"
+    created: "2021-07-07T14:56:59.820778147+02:00"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -91,7 +91,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.696211463+02:00"
+    created: "2021-07-07T14:56:59.820292309+02:00"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -101,7 +101,24 @@ entries:
     version: v0.1.1
   nidhogg:
   - apiVersion: v2
-    created: "2021-07-06T13:33:18.716492304+02:00"
+    created: "2021-07-07T14:56:59.85912972+02:00"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 3.3.5
+    - condition: installCNI
+      name: CNI
+      repository: https://distributed-technologies.github.io/helm-repository/
+      version: v0.3.1
+    description: A chart that deploys argo-cd and the Yggdrasil chart.
+    digest: 96fce50efacdc643f53611f9516372211bd85d4bd97719fd11e365d373bfdf69
+    name: nidhogg
+    type: application
+    urls:
+    - nidhogg-v0.4.6.tgz
+    version: v0.4.6
+  - apiVersion: v2
+    created: "2021-07-07T14:56:59.843859751+02:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -117,4 +134,4 @@ entries:
     urls:
     - nidhogg-v0.4.5.tgz
     version: v0.4.5
-generated: "2021-07-06T13:33:18.681461209+02:00"
+generated: "2021-07-07T14:56:59.814989735+02:00"
