@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   CNI:
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.686655991Z"
+    created: "2021-07-20T07:39:04.704412556Z"
     digest: 7d5089c3293316c8ff4aefb7e115acda789758a1d50eab4e03ecbe5331fc65fc
     name: CNI
     urls:
@@ -10,7 +10,7 @@ entries:
     version: v0.3.1
   argo-chart:
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.764339079Z"
+    created: "2021-07-20T07:39:04.791093238Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -29,7 +29,17 @@ entries:
   chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-20T07:10:10.688144062Z"
+    created: "2021-07-20T07:39:04.706877586Z"
+    description: A Helm chart for Kubernetes
+    digest: 570658200e132d2a5d7fbf41b91e4c53137b466471446771638f77431777f943
+    name: chart
+    type: application
+    urls:
+    - chart-v0.2.27.tgz
+    version: v0.2.27
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-07-20T07:39:04.706255553Z"
     description: A Helm chart for Kubernetes
     digest: 47e514021588c30cec78aef297130da0715a198b5fc0b1197c2473da779bda01
     name: chart
@@ -39,7 +49,7 @@ entries:
     version: v0.2.25
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-20T07:10:10.687634872Z"
+    created: "2021-07-20T07:39:04.705654622Z"
     description: A Helm chart for Kubernetes
     digest: 061a6c74aee9fb15495ad200cef3c9e6896b65cec861cf1ab44a6c10fb773fef
     name: chart
@@ -49,7 +59,7 @@ entries:
     version: v0.2.24
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-20T07:10:10.687130581Z"
+    created: "2021-07-20T07:39:04.705125194Z"
     description: A Helm chart for Kubernetes
     digest: fc2c71c7e95db0e5c1756d75cea36ca56c9a22fb7d66cbb96a2a40ece28f71ee
     name: chart
@@ -63,7 +73,7 @@ entries:
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2021-07-20T07:10:10.689536235Z"
+    created: "2021-07-20T07:39:04.709071902Z"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
       DNS Services
     digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
@@ -86,7 +96,7 @@ entries:
     version: 1.15.2
   lightvessel:
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.689948427Z"
+    created: "2021-07-20T07:39:04.709828542Z"
     description: A Helm chart for lightvessel. This chart keeps the template files
       needed for Yggdrasil and applications.
     digest: a02b6032b8671e5d80dd3340c8246ca4cd0efa68dceb3714d44b1d8b0abf7c09
@@ -96,7 +106,7 @@ entries:
     - lightvessel-v0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.68975703Z"
+    created: "2021-07-20T07:39:04.709474224Z"
     description: A Helm chart for lightvessel. This chart keeps the template files
       needed for Yggdrasil and applications.
     digest: 539e53e042686ba528181dd45c6dafe583085ecc712a43bd3b32585923337c69
@@ -107,7 +117,7 @@ entries:
     version: 0.1.0
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.690642313Z"
+    created: "2021-07-20T07:39:04.711646438Z"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -116,7 +126,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.690429117Z"
+    created: "2021-07-20T07:39:04.711351223Z"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -125,7 +135,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.690211221Z"
+    created: "2021-07-20T07:39:04.710789793Z"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -135,7 +145,7 @@ entries:
     version: v0.1.1
   nidhogg:
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.759032182Z"
+    created: "2021-07-20T07:39:04.783397532Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -152,7 +162,7 @@ entries:
     - nidhogg-v0.5.2.tgz
     version: v0.5.2
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.75039825Z"
+    created: "2021-07-20T07:39:04.775334105Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -169,7 +179,7 @@ entries:
     - nidhogg-v0.5.1.tgz
     version: v0.5.1
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.741918115Z"
+    created: "2021-07-20T07:39:04.765980611Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -186,7 +196,7 @@ entries:
     - nidhogg-v0.5.0.tgz
     version: v0.5.0
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.733384581Z"
+    created: "2021-07-20T07:39:04.757183346Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -203,7 +213,7 @@ entries:
     - nidhogg-v0.4.9.tgz
     version: v0.4.9
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.724773849Z"
+    created: "2021-07-20T07:39:04.748082465Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -220,7 +230,7 @@ entries:
     - nidhogg-v0.4.8.tgz
     version: v0.4.8
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.717230896Z"
+    created: "2021-07-20T07:39:04.738854477Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -237,7 +247,7 @@ entries:
     - nidhogg-v0.4.7.tgz
     version: v0.4.7
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.708930057Z"
+    created: "2021-07-20T07:39:04.730096314Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -254,7 +264,7 @@ entries:
     - nidhogg-v0.4.6.tgz
     version: v0.4.6
   - apiVersion: v2
-    created: "2021-07-20T07:10:10.699765436Z"
+    created: "2021-07-20T07:39:04.72056161Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -270,4 +280,4 @@ entries:
     urls:
     - nidhogg-v0.4.5.tgz
     version: v0.4.5
-generated: "2021-07-20T07:10:10.686261998Z"
+generated: "2021-07-20T07:39:04.703968232Z"
