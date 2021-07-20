@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   CNI:
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.754521788+02:00"
+    created: "2021-07-20T05:43:10.87147356Z"
     digest: 7d5089c3293316c8ff4aefb7e115acda789758a1d50eab4e03ecbe5331fc65fc
     name: CNI
     urls:
@@ -10,7 +10,7 @@ entries:
     version: v0.3.1
   argo-chart:
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.905950037+02:00"
+    created: "2021-07-20T05:43:11.05036272Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -26,14 +26,26 @@ entries:
     urls:
     - yggdrasil-v0.3.6.tgz
     version: v0.3.6
+  chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-07-20T05:43:10.872126867Z"
+    description: A Helm chart for Kubernetes
+    digest: fc2c71c7e95db0e5c1756d75cea36ca56c9a22fb7d66cbb96a2a40ece28f71ee
+    name: chart
+    type: application
+    urls:
+    - chart-v0.1.24.tgz
+    version: v0.1.24
   coredns:
   - annotations:
       artifacthub.io/changes: |
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2021-07-19T11:41:18.760157747+02:00"
-    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes DNS Services
+    created: "2021-07-20T05:43:10.895594211Z"
+    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
+      DNS Services
     digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
     home: https://coredns.io
     icon: https://coredns.io/images/CoreDNS_Colour_Horizontal.png
@@ -54,8 +66,9 @@ entries:
     version: 1.15.2
   lightvessel:
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.761287501+02:00"
-    description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
+    created: "2021-07-20T05:43:10.896636522Z"
+    description: A Helm chart for lightvessel. This chart keeps the template files
+      needed for Yggdrasil and applications.
     digest: a02b6032b8671e5d80dd3340c8246ca4cd0efa68dceb3714d44b1d8b0abf7c09
     name: lightvessel
     type: application
@@ -63,8 +76,9 @@ entries:
     - lightvessel-v0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.760712082+02:00"
-    description: A Helm chart for lightvessel. This chart keeps the template files needed for Yggdrasil and applications.
+    created: "2021-07-20T05:43:10.896084116Z"
+    description: A Helm chart for lightvessel. This chart keeps the template files
+      needed for Yggdrasil and applications.
     digest: 539e53e042686ba528181dd45c6dafe583085ecc712a43bd3b32585923337c69
     name: lightvessel
     type: application
@@ -73,7 +87,7 @@ entries:
     version: 0.1.0
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.762664732+02:00"
+    created: "2021-07-20T05:43:10.898022236Z"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -82,7 +96,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.762156594+02:00"
+    created: "2021-07-20T05:43:10.89743903Z"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -91,7 +105,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.76176086+02:00"
+    created: "2021-07-20T05:43:10.897042126Z"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -101,7 +115,7 @@ entries:
     version: v0.1.1
   nidhogg:
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.895683656+02:00"
+    created: "2021-07-20T05:43:11.043497249Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -118,7 +132,7 @@ entries:
     - nidhogg-v0.5.2.tgz
     version: v0.5.2
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.878951121+02:00"
+    created: "2021-07-20T05:43:11.026523072Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -135,7 +149,7 @@ entries:
     - nidhogg-v0.5.1.tgz
     version: v0.5.1
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.859536963+02:00"
+    created: "2021-07-20T05:43:11.016761871Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -152,7 +166,7 @@ entries:
     - nidhogg-v0.5.0.tgz
     version: v0.5.0
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.846973659+02:00"
+    created: "2021-07-20T05:43:10.99359053Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -169,7 +183,7 @@ entries:
     - nidhogg-v0.4.9.tgz
     version: v0.4.9
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.830620124+02:00"
+    created: "2021-07-20T05:43:10.983659027Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -186,7 +200,7 @@ entries:
     - nidhogg-v0.4.8.tgz
     version: v0.4.8
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.816515611+02:00"
+    created: "2021-07-20T05:43:10.965498138Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -203,7 +217,7 @@ entries:
     - nidhogg-v0.4.7.tgz
     version: v0.4.7
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.795000104+02:00"
+    created: "2021-07-20T05:43:10.955725136Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -220,7 +234,7 @@ entries:
     - nidhogg-v0.4.6.tgz
     version: v0.4.6
   - apiVersion: v2
-    created: "2021-07-19T11:41:18.781568338+02:00"
+    created: "2021-07-20T05:43:10.944416818Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -236,4 +250,4 @@ entries:
     urls:
     - nidhogg-v0.4.5.tgz
     version: v0.4.5
-generated: "2021-07-19T11:41:18.752930754+02:00"
+generated: "2021-07-20T05:43:10.870688752Z"
