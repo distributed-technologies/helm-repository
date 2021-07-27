@@ -2,22 +2,36 @@ apiVersion: v1
 entries:
   CNI:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.515341183Z"
+    created: "2021-07-27T11:00:04.945637069Z"
     digest: ed294b22fa90687fbf0e3a5ff17778a03f36cb7b6f0ab077b82bf84cc0a1ce39
     name: CNI
     urls:
     - CNI-v0.3.3.tgz
     version: v0.3.3
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.514973188Z"
+    created: "2021-07-27T11:00:04.945420366Z"
     digest: 7d5089c3293316c8ff4aefb7e115acda789758a1d50eab4e03ecbe5331fc65fc
     name: CNI
     urls:
     - CNI-v0.3.1.tgz
     version: v0.3.1
+  Harbor:
+  - apiVersion: v2
+    created: "2021-07-27T11:00:04.949435719Z"
+    dependencies:
+    - name: harbor
+      repository: https://helm.goharbor.io
+      version: 1.6.1
+    description: A Helm chart for setting up Harbor for Kubernetes
+    digest: a8edb218cdc0da579c26bc2643ae9a8c124705043da729b82872e90313654f24
+    name: Harbor
+    type: application
+    urls:
+    - Harbor-v0.1.0.tgz
+    version: v0.1.0
   Prometheus:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.544739582Z"
+    created: "2021-07-27T11:00:04.96860807Z"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -31,7 +45,7 @@ entries:
     version: v0.1.0
   argo-chart:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.678948855Z"
+    created: "2021-07-27T11:00:05.053257781Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -50,7 +64,7 @@ entries:
   chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T06:50:47.552327879Z"
+    created: "2021-07-27T11:00:04.973615336Z"
     description: A Helm chart for Kubernetes
     digest: 570658200e132d2a5d7fbf41b91e4c53137b466471446771638f77431777f943
     name: chart
@@ -60,7 +74,7 @@ entries:
     version: v0.2.27
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T06:50:47.551779887Z"
+    created: "2021-07-27T11:00:04.97320863Z"
     description: A Helm chart for Kubernetes
     digest: 47e514021588c30cec78aef297130da0715a198b5fc0b1197c2473da779bda01
     name: chart
@@ -70,7 +84,7 @@ entries:
     version: v0.2.25
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T06:50:47.551155495Z"
+    created: "2021-07-27T11:00:04.972834426Z"
     description: A Helm chart for Kubernetes
     digest: 061a6c74aee9fb15495ad200cef3c9e6896b65cec861cf1ab44a6c10fb773fef
     name: chart
@@ -80,7 +94,7 @@ entries:
     version: v0.2.24
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T06:50:47.550593803Z"
+    created: "2021-07-27T11:00:04.972468821Z"
     description: A Helm chart for Kubernetes
     digest: fc2c71c7e95db0e5c1756d75cea36ca56c9a22fb7d66cbb96a2a40ece28f71ee
     name: chart
@@ -89,7 +103,7 @@ entries:
     - chart-v0.1.24.tgz
     version: v0.1.24
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.547432946Z"
+    created: "2021-07-27T11:00:04.970362093Z"
     dependencies:
     - name: grafana
       repository: https://grafana.github.io/helm-charts
@@ -102,7 +116,7 @@ entries:
     - chart-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.549880112Z"
+    created: "2021-07-27T11:00:04.972052515Z"
     dependencies:
     - name: grafana
       repository: https://grafana.github.io/helm-charts
@@ -120,7 +134,7 @@ entries:
         - Initial helm chart changelog
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2021-07-27T06:50:47.556478223Z"
+    created: "2021-07-27T11:00:04.97471295Z"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
       DNS Services
     digest: d1d0d5015a5924be3d9f2ff03ebed8f8272f2412bab52fb0ad92973554a130ec
@@ -143,7 +157,7 @@ entries:
     version: 1.15.2
   lightvessel:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.557168313Z"
+    created: "2021-07-27T11:00:04.975068255Z"
     description: A Helm chart for lightvessel. This chart keeps the template files
       needed for Yggdrasil and applications.
     digest: a02b6032b8671e5d80dd3340c8246ca4cd0efa68dceb3714d44b1d8b0abf7c09
@@ -153,7 +167,7 @@ entries:
     - lightvessel-v0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.556856217Z"
+    created: "2021-07-27T11:00:04.974899653Z"
     description: A Helm chart for lightvessel. This chart keeps the template files
       needed for Yggdrasil and applications.
     digest: 539e53e042686ba528181dd45c6dafe583085ecc712a43bd3b32585923337c69
@@ -164,7 +178,7 @@ entries:
     version: 0.1.0
   mukube-loadbalancer:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.557529108Z"
+    created: "2021-07-27T11:00:04.975805965Z"
     digest: 60a481cfd5a1df52587bd1d6f8f6b48ed7cb0706ae4eaff5680aa2e26f95d282
     name: mukube-loadbalancer
     urls:
@@ -172,7 +186,7 @@ entries:
     version: v0.1.5
   mukube-vnet:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.558495695Z"
+    created: "2021-07-27T11:00:04.976322671Z"
     digest: d292ba98577e28779b755714600e9ca19b15fae4c36bba3d05b1f4196b3d07d3
     maintainers:
     - name: Jacob Crawford
@@ -181,7 +195,7 @@ entries:
     - mukube-vnet-v0.3.0.tgz
     version: v0.3.0
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.558199899Z"
+    created: "2021-07-27T11:00:04.976132069Z"
     digest: b2f35980879b55d3f68b5fbcc16a132202d57714e69d1f3d87a43234c4851449
     maintainers:
     - name: Jacob Crawford
@@ -190,7 +204,7 @@ entries:
     - mukube-vnet-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.557903003Z"
+    created: "2021-07-27T11:00:04.975973767Z"
     digest: ccc1773b1132b828d6d5e7ef246cf5e4f565ed9a482f0082317d9f9304d303aa
     maintainers:
     - name: Jacob Crawford
@@ -200,7 +214,7 @@ entries:
     version: v0.1.1
   nidhogg:
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.648914464Z"
+    created: "2021-07-27T11:00:05.035054442Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -217,7 +231,7 @@ entries:
     - nidhogg-v0.5.2.tgz
     version: v0.5.2
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.638466806Z"
+    created: "2021-07-27T11:00:05.027705145Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -234,7 +248,7 @@ entries:
     - nidhogg-v0.5.1.tgz
     version: v0.5.1
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.625993176Z"
+    created: "2021-07-27T11:00:05.02122316Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -251,7 +265,7 @@ entries:
     - nidhogg-v0.5.0.tgz
     version: v0.5.0
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.615694916Z"
+    created: "2021-07-27T11:00:05.013936465Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -268,7 +282,7 @@ entries:
     - nidhogg-v0.4.9.tgz
     version: v0.4.9
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.603250586Z"
+    created: "2021-07-27T11:00:05.007418579Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -285,7 +299,7 @@ entries:
     - nidhogg-v0.4.8.tgz
     version: v0.4.8
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.591963739Z"
+    created: "2021-07-27T11:00:04.999723778Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -302,7 +316,7 @@ entries:
     - nidhogg-v0.4.7.tgz
     version: v0.4.7
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.580120101Z"
+    created: "2021-07-27T11:00:04.993253993Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -319,7 +333,7 @@ entries:
     - nidhogg-v0.4.6.tgz
     version: v0.4.6
   - apiVersion: v2
-    created: "2021-07-27T06:50:47.569264448Z"
+    created: "2021-07-27T11:00:04.985147487Z"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -338,7 +352,7 @@ entries:
   services-haproxy:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T06:50:47.649401958Z"
+    created: "2021-07-27T11:00:05.035371746Z"
     description: A Helm chart for a haproxy that loadbalances the kubernetes api-server
     digest: 6b1a641c72d603ca1196905fac0966de2c4ed4e7c67be8a70d6d389935aa66fa
     name: services-haproxy
@@ -348,7 +362,7 @@ entries:
   services-kafka:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-27T06:50:47.671630055Z"
+    created: "2021-07-27T11:00:05.048577119Z"
     dependencies:
     - name: strimzi-kafka-operator
       repository: https://strimzi.io/charts/
@@ -363,4 +377,4 @@ entries:
     urls:
     - services-kafka-v0.1.0.tgz
     version: v0.1.0
-generated: "2021-07-27T06:50:47.514285897Z"
+generated: "2021-07-27T11:00:04.945064761Z"
